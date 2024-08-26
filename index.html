@@ -174,7 +174,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Although diffusion-based image virtual try-on has made considerable progress, emerging approaches still struggle to effectively address the issue of hand occlusion (i.e., clothing regions occluded by the hand part), leading to a notable degradation of the try-on performance. To tackle this issue widely existing in real-world scenarios, we propose VTON-HandFit, leveraging the power of hand priors to reconstruct the appearance and structure for hand occlusion cases. Firstly, we tailor a Handpose Aggregation Net using the ControlNet-based structure explicitly and adaptively encoding the global hand and pose priors. Besides, to fully exploit the hand-related structure and appearance information, we propose Hand-feature Disentanglement Embedding module to disentangle the hand priors into the hand structure-parametric and visual-appearance features, and customize a masked cross attention for further decoupled feature embedding. Lastly, we customize a hand-canny constraint loss to better learn the structure edge knowledge from the hand template of model image. VTON-HandFit outperforms the baselines in qualitative and quantitative evaluations on the public dataset and our self-collected hand-occlusion Handfit-3K dataset particularly for the arbitrary hand pose occlusion cases in real-world scenarios. Code and dataset will be made publicly available.
+            Although diffusion-based image virtual try-on has made considerable progress, emerging approaches still struggle to effectively address the issue of hand occlusion (i.e., clothing regions occluded by the hand part), leading to a notable degradation of the try-on performance. To tackle this issue widely existing in real-world scenarios, we propose VTON-HandFit, leveraging the power of hand priors to reconstruct the appearance and structure for hand occlusion cases. Firstly, we tailor a Handpose Aggregation Net using the ControlNet-based structure explicitly and adaptively encoding the global hand and pose priors. Besides, to fully exploit the hand-related structure and appearance information, we propose Hand-feature Disentanglement Embedding module to disentangle the hand priors into the hand structure-parametric and visual-appearance features, and customize a masked cross attention for further decoupled feature embedding. Lastly, we customize a hand-canny constraint loss to better learn the structure edge knowledge from the hand template of model image. VTON-HandFit outperforms the baselines in qualitative and quantitative evaluations on the public dataset and our self-collected hand-occlusion Handfit-3K dataset particularly for the arbitrary hand pose occlusion cases in real-world scenarios. 
           </p>
         </div>
       </div>
@@ -194,7 +194,7 @@
 
          <img src="static/images/aaai_arch.png" alt="Dataset compression scale" class="blend-img-background center-image" style="max-width: 100%; height: auto;"/>
           <div class="level-set has-text-justified">
-            <p>An overview of our VTON-HandFit Network. The network consists of two main components: Hand-feature Disentanglement Embedding and Hand-Pose Aggregation Net. The Hand-feature Disentanglement Embedding module uses the HaMer model to extract hand priors, including hand type \( T_h \), 3D vertices \( V_h \), spatial joint locations \( J_{2d} \), and joint rotation matrices \( \theta_h \). These features are processed by the Hand-Struct processor to derive structural features \( c_{struc} \). Simultaneously, hand images cropped using bounding boxes are processed by DINOv2 and the Hand-Appear processor to obtain visual features \( c_{appear} \). The structural and visual features are integrated using mask cross attention. The Hand-Pose Aggregation Net module controls body and hand poses by aggregating DWpose, Densepose, and hand depth maps. </p>
+            <p>An overview of our VTON-HandFit Network. The network consists of two main components: Hand-feature Disentanglement Embedding and Hand-Pose Aggregation Net. The Hand-feature Disentanglement Embedding module uses the HaMer model to extract hand priors, including hand type \( T_h \), 3D vertices \( V_h \), spatial joint locations \( J_{2d} \), and joint rotation matrices \( \theta_h \). These features are processed by the Hand-Struct processor to derive structural features \( c_{struc} \). Simultaneously, hand images cropped using bounding boxes are processed by DINOv2 and the Hand-Appear processor to obtain visual features \( c_{appear} \). The structural and visual features are integrated using mask cross attention. The Hand-Pose Aggregation Net module controls body and hand poses by aggregating DWpose, Densepose, and hand depth. </p>
        
         </div>
          
@@ -250,7 +250,7 @@
         <div class="content">
          <h2 class="title is-3">Quantitative results</h2>
          <img src="static/images/result.png" alt="Dataset compression scale" class="blend-img-background center-image" style="max-width: 100%; height: auto;"/>
-         <img src="static/images/handfit3-kresult.png" alt="Dataset compression scale" class="blend-img-background center-image" style="max-width: 100%; height: auto;"/>
+         <img src="static/images/handfit3-kresult.png" alt="Dataset compression scale" class="center-image" style="max-width: 100%; height: auto;"/>
           <div class="level-set has-text-justified">
             <p></p>
         </div>
@@ -271,9 +271,9 @@
       <div class="column is-full">
         <div class="content">
          <h2 class="title is-3">Handfit-3K Dataset</h2>
-         <p >An overview of our Handfit-3k Dataset.</p>
+         <!-- <p >An overview of our Handfit-3k Dataset.</p> -->
          <!-- class="blend-img-background center-image"/> -->
-         <img src="static/images/handfit3k_overview.png" alt="Dataset compression scale" class="blend-img-background center-image"/>
+         <img src="static/images/handfit3k_overview.png" alt="Dataset compression scale" class="center-image" style="max-width: 70%; height: auto;"/>
           <div class="level-set has-text-justified">
         </div></div>
       </div>
