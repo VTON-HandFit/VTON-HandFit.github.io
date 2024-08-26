@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>VTON-HandFit: Virtual Try-on for Arbitrary Hand Pose Guided by Hand Priors Embedding</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -69,6 +69,7 @@
                   <span class="author-block">
                     Kai WU<sup>2</sup>
                   </span>
+                  <br>
                   <span class="author-block">
                     Wenhui Han<sup>2</sup>
                   </span>
@@ -152,10 +153,10 @@
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video> -->
-      <img src="static/pdfs/321.pdf" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
+      <img src="static/images/aaai24_figure_1.png" alt="MY ALT TEXT"/>
+      <!-- <h2 class="subtitle has-text-centered">
         Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+      </h2> -->
     </div>
   </div>
 </section>
@@ -177,6 +178,24 @@
   </div>
 </section>
 <!-- End paper abstract -->
+
+
+<!-- Paper method -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <img src="/Users/liangyujie/Downloads/VTON-HandFit.github.io/static/images/aaai_arch.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">An overview of our VTON-HandFit Network. The network consists of two main components: Hand-feature Disentanglement Embedding and Hand-Pose Aggregation Net. The Hand-feature Disentanglement Embedding module uses the HaMer model to extract hand priors, including hand type ${T_h}$, 3D vertices ${V_h}$, spatial joint locations ${J}_{2d}$, and joint rotation matrices $\theta_h$. These features are processed by the Hand-Struct processor to derive structural features $c_{struc}$. Simultaneously, hand images cropped using bounding boxes are processed by DINOv2 and the Hand-Appear processor to obtain visual features $c_{appear}$. The structural and visual features are integrated using mask cross attention. The Hand-Pose Aggregation Net module controls body and hand poses by aggregating DWpose, Densepose, and hand depth maps. </h2>
+        <div class="content has-text-justified">
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper method -->
 
 
 <!-- Image carousel -->
@@ -222,49 +241,46 @@
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- Youtube embed code here -->
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
+
             <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
+
             <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
             <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
@@ -272,7 +288,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
 
 
